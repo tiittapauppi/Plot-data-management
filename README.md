@@ -1,6 +1,4 @@
 # Plot-data-management
-
-# Larp Information from Airtable to Wordpress
 Larp Information plugin for Wordpress and Airtable
 
 # Creator
