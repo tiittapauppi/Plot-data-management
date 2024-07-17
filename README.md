@@ -12,6 +12,8 @@ On first phase, this does only retrieving the data, updating the data will be do
 
 Tool handles also full visibility for GM's and possiblity show some information to all everybody.
 
+Tool can be tested at: http://www.lasipallo.com/testworld/
+
 # Approach
 
 The project provides guidance for setting up the workspace. Plugin should work out of the box as long the workspace is done according the instructions.
