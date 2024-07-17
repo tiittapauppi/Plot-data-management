@@ -15,7 +15,7 @@ License:            MIT License
  */
 function my_airtable_scripts() {
     $plugin_url = plugin_dir_url( __FILE__ );
-    wp_enqueue_style( 'mwt-style', $plugin_url . 'css/mwt-style.css'  );
+    wp_enqueue_style( 'styles', $plugin_url . 'styles.css'  );
 
     // Enqueue JQueryUI Date picker to ensure common Date Picker UX across main browsers e.g. Safari
     wp_enqueue_script('jquery');
@@ -383,8 +383,8 @@ function myAirTable() {
 		$_SESSION['code'] = $code;
 	}	
 
-	$profile = '<div class=mwt-container>'
-               . '<div class="mwt-item">'
+	$profile = '<div class=container>'
+               . '<div class="item">'
 	           . '<form id="search-form" action="" method="POST">';
 	
 	if($allow_manual_character_name== "Yes"){
@@ -395,7 +395,7 @@ function myAirTable() {
              . '</form>';
 		
 	if(!empty($_SESSION['code'])){
-		$profile .=  '<h5 class="profile-details__header">Results of latest search - <i>Character ID: ' . $lowCharacter . " / ID: " . $lowCode . '</i></h5>'	
+		$profile .=  '<h5 class="profile-details-header">Results of latest search - <i>Character ID: ' . $lowCharacter . " / ID: " . $lowCode . '</i></h5>'	
                 . '<table class="results">';
 
 		$groupChars = "Characters (from Groups)"; 
